@@ -4,23 +4,24 @@
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
 
-  --color-card: #141a1f;
+  --color-card: #161f26;
 
   --color-primary: #4169e1;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #1f2830;
-  --color-secondary-foreground: #20b2a6;
+  --color-secondary: #22314a;
+  --color-secondary-foreground: #8fb0ff;
 
-  --color-muted: #252e37;
-  --color-muted-foreground: #7a8491;
+  --color-muted: #202a33;
+  --color-muted-foreground: #8a94a3;
 
-  --color-border: #242b32;
+  --color-border: #2a3642;
 
   --radius: 0.75rem;
 
-  --color-highlight: #f5a623;
-  --color-surface: #1a2329;
+  --color-highlight: #f2b84b;
+  --color-surface: #141b21;
+  --color-surface-elevated: #1b2530;
 }
 
 @layer base {
