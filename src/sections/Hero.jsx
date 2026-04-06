@@ -31,6 +31,15 @@ const skills = [
 ];
 
 export const Hero = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/Laurent_Sauzet_CV.pdf"; // À adapter avec le nom de votre fichier CV
+    link.download = "Laurent_Sauzet_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* bg */}
@@ -99,7 +108,7 @@ export const Hero = () => {
               <Button size="lg">
                 Contactez moi <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={handleDownloadCV}>
                 <Download className="w-5 h-5" />
                 Téléchargez mon CV
               </AnimatedBorderButton>
