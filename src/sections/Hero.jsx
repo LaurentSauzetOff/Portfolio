@@ -33,8 +33,8 @@ const skills = [
 export const Hero = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Laurent_Sauzet_CV.pdf"; // À adapter avec le nom de votre fichier CV
-    link.download = "Laurent_Sauzet_CV.pdf";
+    link.href = "/CV_Laurent.docx"; // À adapter avec le nom de votre fichier CV
+    link.download = "CV_Laurent.docx";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -106,10 +106,10 @@ export const Hero = () => {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
-                Contactez moi <ArrowRight className="w-5 h-5" />
+                Contactez moi <ArrowRight className="w-5 h-5 "  />
               </Button>
               <AnimatedBorderButton onClick={handleDownloadCV}>
-                <Download className="w-5 h-5" />
+                <Download className="w-5 h-5 cursor-pointer" />
                 Téléchargez mon CV
               </AnimatedBorderButton>
             </div>
